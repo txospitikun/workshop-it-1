@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop HTML, CSS și JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Titlu principal al paginii -->
+    <header>
+        <h1>My personal blog!</h1>
+        <p>Acesta este un demo pentru workshop de IT.</p>
+    </header>
+
+    <!-- O secțiune de tip blog -->
+    <section id="blog">
+        <h2>Postări de pe Blog</h2>
+        <div id="posts">
+            <!-- Aici vor apărea postările generate de utilizator -->
+        </div>
+
+        <!-- Formular pentru a adăuga o postare nouă -->
+        <div id="newPost">
+            <h3>Scrie o postare nouă</h3>
+            <input type="text" id="postTitle" placeholder="Titlul postării">
+            <textarea id="postContent" placeholder="Conținutul postării"></textarea>
+            <input type="file" id="postImageFile" accept="image/*">
+            <button onclick="addPost()">Adaugă Postare</button>
+        </div>
+    </section>
+
+    <!-- Scriptul JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
